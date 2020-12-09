@@ -58,7 +58,7 @@
                                                                         </a></li>
                                                                 </ul>
                                                                 <a class="btn btn-plus investRoi" data-all="{{$data}}" data-route="{{route('purchase.plan',$data->id)}}"  href="#addModal" data-toggle="modal"><i class="fa fa-plus"></i></a>
-                                                                <a class="btn btn-white investRoi" data-all="{{$data}}" data-route="{{route('purchase.plan',$data->id)}}" href="#addModal" data-toggle="modal">{{__('Buy Now')}}</a>
+                                                                <a class="btn btn-white investRoi" data-all="{{$data}}" data-route="{{route('purchase.plan',$data->id)}}" href="#addModal" data-toggle="modal">{{__('Select Plan')}}</a>
                                                             </div>
                                                         </div>
                                                     @endforeach
@@ -100,7 +100,7 @@
 
                                                                 </ul>
                                                                 <a class="btn btn-plus investFixed" href="#addModalTwo" data-toggle="modal" data-all="{{$data}}"  data-route="{{route('purchase.plan',$data->id)}}"><i class="fa fa-plus"></i></a>
-                                                                <a class="btn btn-white investFixed" href="#addModalTwo" data-toggle="modal" data-all="{{$data}}"  data-route="{{route('purchase.plan',$data->id)}}">{{__('Buy Now')}}</a>
+                                                                <a class="btn btn-white investFixed" href="#addModalTwo" data-toggle="modal" data-all="{{$data}}"  data-route="{{route('purchase.plan',$data->id)}}">{{__('Select Plan')}}</a>
                                                             </div>
                                                         </div>
                                                     @endforeach

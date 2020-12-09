@@ -176,7 +176,7 @@
                                                             </a></li>
                                                     </ul>
                                                     <a class="btn btn-plus" href="{{route('invest.index')}}"><i class="fa fa-plus"></i></a>
-                                                    <a class="btn btn-white" href="{{route('invest.index')}}">{{__('Buy Now')}}</a>
+                                                    <a class="btn btn-white" href="{{route('invest.index')}}">{{__('Select Plan')}}</a>
                                                 </div>
                                             </div>
                                         @endforeach
@@ -218,7 +218,7 @@
 
                                                     </ul>
                                                     <a class="btn btn-plus" href="{{route('invest.index')}}"><i class="fa fa-plus"></i></a>
-                                                    <a class="btn btn-white" href="{{route('invest.index')}}">{{__('Buy Now')}}</a>
+                                                    <a class="btn btn-white" href="{{route('invest.index')}}">{{__('Select Plan')}}</a>
                                                 </div>
                                             </div>
                                         @endforeach

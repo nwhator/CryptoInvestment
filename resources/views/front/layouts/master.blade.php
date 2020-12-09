@@ -223,14 +223,7 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 text-lg-left text-center">
-                    <ul class="footer-menu">
-                       <li> 
-                            <a href="{{route('single.page',['class' => 'Menu', 'id' =>$data->id])}}">{{$data->title}}</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-5 text-center text-lg-right">
+                <div class="col">
                     <p class="copyright">{{$general->copyright_text}}</p>
                 </div>
             </div>
