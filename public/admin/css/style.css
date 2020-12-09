@@ -21,37 +21,36 @@ body{
 }
 
 .flow-root{
-    display: flow-root; !important;
+    display: flow-root; 
 }
 
 .e6fffa{
-    color: #e6fffa; !important;
+    color: #e6fffa; 
 }
 
 .padding-left-15{
-    padding-left: 15px; !important;
+    padding-left: 15px;
 }
-
 .width-100{
-    width: 100%; !important;
+    width: 100%; 
 }
 
 .inline-block{
-    display: inline-block; !important;
+    display: inline-block; 
 }
 
 .width-height-200{
-    max-width: 200px; !important;
-    max-height: 200px; !important;
+    max-width: 200px; 
+    max-height: 200px; 
 }
 
 .max-width-18rem{
-    max-width: 18rem; !important;
+    max-width: 18rem; 
 }
 
 .width-height-80{
-    height: 80px; !important;
-    width: 80px;!important;
+    height: 80px;
+    width: 80px;
 }
 a.user-profile {
     color: #fff !important;
@@ -439,7 +438,7 @@ tbody {
 .login-body {
     min-height: calc(100vh - 2px);
     padding: 0 15px;
-    background-image: url(http://webplugintheme.com/code/ref/public/images/banner/bg.png);
+    background-image: url(../../../public/images/banner/bg.png);
     background-size: 110%;
     background-position: top;
     background-color: #060268;

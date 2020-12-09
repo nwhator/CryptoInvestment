@@ -210,52 +210,13 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="col">
                     <div class="footer-widget widget widget-about-us">
-                        <a href="{{url('/')}}" class="footer-logo">
-                            <img src="{{asset('images/logo/logo.png')}}" alt="footer logo">
-                        </a>
-                        <p>{!! clean($general->footer_text) !!}</p>
-                        <ul class="footer-social social-area-2">
-                            @foreach($social as $data)
-                                <li><a href="{{$data->link}}" target="_blank"><i class="fa fa-{{$data->icon}}"></i></a></li>
-                            @endforeach
-                        </ul>
+                        <p class="footer-menu">{{$general->footer_text}}</p>
+                        <br>
+                        <p class="footer-menu">{{$general->footer_text2}}</p>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-4">
-                    <div class="footer-widget widget widget_nav_menu">
-                        <h4 class="widget-title">{{__('Links')}} <span class="dot">.</span></h4>
-                        <ul>
-                            <li><a href="{{route('news.index')}}"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>{{__('Blog')}}</a></li>
-                            <li><a href="{{route('contacts.index')}}"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>{{__('Contact')}}</a></li>
-                            @guest
-                            <li><a href="{{route('register')}}"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>{{__('Sign Up')}}</a></li>
-                            <li><a href="{{route('login')}}"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>{{__('Sign In')}}</a></li>
-                                @else
-                                <li><a href="{{route('home')}}"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>{{__('Dashboard')}}</a></li>
-                            @endguest
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="footer-widget widget widget_nav_menu">
-                        <h4 class="widget-title">{{__('Others Links')}} <span class="dot">.</span></h4>
-                        <ul>
-                            @foreach($frontMenu as $data)
-                            <li><a href="{{route('single.page',['class' => 'Menu', 'id' =>$data->id])}}"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>{{$data->title}}</a></li>
-                            @endforeach
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="footer-widget widget contact-widget">
-                        <h4 class="widget-title">{{__('Contact Us')}} <span class="dot">.</span></h4>
-                        <p>{!! clean($general->contact_address) !!}</p>
-                        <p>{!! clean($general->contact_email) !!}</p>
-                        <p>{!! clean($general->contact_phone) !!}</p>
-                    </div>
-                </div>
+                </div>                           
             </div>
         </div>
     </div>
@@ -264,18 +225,9 @@
             <div class="row">
                 <div class="col-lg-7 text-lg-left text-center">
                     <ul class="footer-menu">
-                        @auth
-                            <li><a href="{{route('users.showDepositMethods')}}">{{__('Add Deposit')}}</a></li>
-                            <li><a href="{{route('invest.index')}}">{{__('Investment Plan')}}</a></li>
-                            <li><a href="{{route('fund.transfer')}}">{{__('Fund Transfer')}}</a></li>
-                            @else
-                            <li> <a href="{{url('/')}}">{{__('Home')}}</a></li>
-                            @foreach($frontMenu as $data)
-                                <li>
-                                    <a href="{{route('single.page',['class' => 'Menu', 'id' =>$data->id])}}">{{$data->title}}</a>
-                                </li>
-                            @endforeach
-                        @endif
+                       <li> 
+                            <a href="{{route('single.page',['class' => 'Menu', 'id' =>$data->id])}}">{{$data->title}}</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-5 text-center text-lg-right">

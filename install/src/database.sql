@@ -116,7 +116,9 @@ CREATE TABLE `generals` (
   `contact_address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'Abuja, Nigeria',
   `contact_email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'admin@cryptochaincap.com',
   `contact_phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT '0123654789',
-  `copyright_text` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'All Rights Reserved by Nwhator Promise',
+  `copyright_text` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT '&#169; CRYPTOCHAIN CAPITAL PTY LTD (ACN: 624 638 062) 2018 - All Rights Reserved.',
+  `footer_text` longtext COLLATE utf8mb4_unicode_ci DEFAULT 'Cryptochain Capital Pty Ltd [ACN: 624 638 062] believes the statements contained on this website to be reliable. However, the information on this website is general information only and does not take into account any investor&#39;s or customer&#39;s particular circumstances. Statements contained on this website are not designed for the purpose of providing personal financial or investment advice or a recommendation around investing in any cryptocurrency fund.',
+  `footer_text2` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'Cryptochain Capital Pty Ltd, its directors, and employees do not accept any liability for the results of any actions taken or not taken on the basis of information contained on this website, or for any negligent misstatements, errors ,or omissions.',
   `banner_header` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `banner_body` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `banner_footer` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -367,9 +369,8 @@ CREATE TABLE `payment_gatways` (
 
 INSERT INTO `payment_gatways` (`id`, `image`, `name`, `minimum_deposit_amount`, `maximum_deposit_amount`, `fixed_charge`, `percentage_charge`, `rate`, `gateway_key_one`, `gateway_key_two`, `gateway_key_three`, `gateway_key_four`, `status`, `created_at`, `updated_at`) VALUES
 (1, '1600414774.jpg', 'Paypal', '10', '1000', '1', '1', '1', 'sb-eiuis3003399_api1.business.example.com', '9ADSGMTGZU2M3345', 'ARHPijWmCCSUguBRmsQZVk1xNcMRA5duAKOpWAtXHPWg7G-dogEDAUxf', 'APP-80W284485P519543T', 1, NULL, '2020-09-18 01:39:34'),
-(2, '1600416608.jpg', 'Coinpayment', '1', '100', '0', '0', '1', 'db1d9f12444e65c921604e289a281c56', 'db1d9f12444e65c921604e289a281c56', NULL, NULL, 1, NULL, '2020-09-18 02:45:04'),
-(3, '1600415960.jpg', 'Stripe', '1', '100', '0', '0', '1', 'sk_test_aat3tzBCCXXBkS4sxY3M8A1B', 'pk_test_AU3G7doZ1sbdpJLj0NaozPBu', NULL, NULL, 1, NULL, '2020-09-18 01:59:20'),
-(4, '1598017936.jpg', 'Citi Bank', '10', '100', '1.1', '1.2', '1', NULL, NULL, NULL, 'Account Num : 4242 4242 4242 4242', 1, '2020-08-21 07:52:16', '2020-08-21 07:52:43');
+(2, '1600416608.jpg', 'Coinpayment', '1', '500', '0', '0', '1', 'db1d9f12444e65c921604e289a281c56', 'db1d9f12444e65c921604e289a281c56', NULL, NULL, 1, NULL, '2020-09-18 02:45:04'),
+(3, '1600415960.jpg', 'Stripe', '1', '500', '0', '0', '1', 'sk_test_aat3tzBCCXXBkS4sxY3M8A1B', 'pk_test_AU3G7doZ1sbdpJLj0NaozPBu', NULL, NULL, 1, NULL, '2020-09-18 01:59:20'),
 
 -- --------------------------------------------------------
 
