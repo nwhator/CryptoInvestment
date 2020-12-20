@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="{{asset('user/css/custom.css')}}">
     <link href="{{asset('user/css/color.php?color='.$general->color_code)}}" rel="stylesheet">
     @yield('style')
+    <script src="//code.jivosite.com/widget/j0A5XML4v5" async></script>
 </head>
 
 <body>
